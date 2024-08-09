@@ -29,15 +29,15 @@ CREATE TABLE Customers (
 #Orders: Stores information about orders placed by customers
 CREATE TABLE Orders (
     order_id INT PRIMARY KEY,
-    FOREIGN KEY (customer_id) REFERENCING Customers(customer_id),
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
     order_date DATE
 );
 
 #Order_Details: Stores information about the books included in each order.
 CREATE TABLE Order_Details (
     order_detail_id INT PRIMARY KEY,
-    FOREIGN KEY (order_id) REFERENCING orders(order_id),
-    FOREIGN KEY (book_id) REFERENCING books(book_id),
+    FOREIGN KEY (order_id) REFERENCES orders(order_id),
+    FOREIGN KEY (book_id) REFERENCES books(book_id),
     quantity DOUBLE
 );
 
