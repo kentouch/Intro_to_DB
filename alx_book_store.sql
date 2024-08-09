@@ -1,5 +1,5 @@
 # creation of a database named alx_book_store
-CREATE DATABASE alx_book_store;
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 
 #Books: Stores information about books available in the bookstore.
 CREATE TABLE Books (
