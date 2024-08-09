@@ -21,7 +21,7 @@ CREATE TABLE Authors (
 #Customers: Stores information about customers.
 CREATE TABLE Customers (
     customer_id INT PRIMARY KEY,
-    customer_name VARCHAR(130) NOT NULL,
+    customer_name VARCHAR(215) NOT NULL,
     email VARCHAR(215),
     address TEXT
 );
