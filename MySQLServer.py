@@ -15,7 +15,10 @@ try:
     myCursor = db.cursor()
         # assigning a query to create a new dtabase
     sql = 'CREATE DATABASE IF NOT EXISTS alx_book_store'
-    myCursor.execute(sql)
+    if "SELECT" or "SHOW" not in sql:
+        myCursor.execute(sql)
+    else:
+        print("SELECT and SHOW are not allowed to be used")
     myCursor.close()
     print("Database 'alx_book_store' created successfully!")
 except mysql.connector.Error:
