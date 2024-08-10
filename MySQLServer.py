@@ -14,7 +14,7 @@ try:
         # using cursor to perform query statements
     myCursor = db.cursor()
         # assigning a query to create a new dtabase
-    sql = 'CREATE DATABASE alx_book_store'
+    sql = 'CREATE DATABASE IF NOT EXISTS alx_book_store'
     myCursor.execute(sql)
     myCursor.close()
     print("Database 'alx_book_store' created successfully!")
