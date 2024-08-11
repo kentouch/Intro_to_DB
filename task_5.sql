@@ -6,4 +6,4 @@ USE alx_book_store;
 
 # Insert data into table customers
 INSERT INTO customers(customer_id, customer_name, email, address)
-VALUE(1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Hapiness Ave');
+VALUE(1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave');
