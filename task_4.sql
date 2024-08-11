@@ -6,4 +6,4 @@ USE alx_book_store;
 # let print table books description
 SELECT COLUMN_NAME, DATA_TYPE, IS_NULLABLE, COLUMN_TYPE
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME = 'books' AND TABLE_SCHEMA = 'alx_book_store';
+WHERE TABLE_NAME = 'Books' AND TABLE_SCHEMA = 'alx_book_store';
